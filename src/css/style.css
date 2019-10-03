@@ -1,9 +1,5 @@
 body {
-  font-family: sans-serif;
-}
-
-img {
-  max-width: 100%;
+  font-family: 'Museo Sans Light';
 }
 
 .container {
@@ -65,10 +61,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .navbar__button {
   margin-left: 30px;
+  font-family: 'Museo Sans Bold';
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .navbar__phone {
@@ -78,6 +79,7 @@ img {
   font-weight: 400;
   text-decoration: none;
   margin-top: 10px;
+  font-family: 'Museo Sans Bold';
 }
 
 @media (max-width: 768px) {
@@ -103,24 +105,32 @@ img {
   display: flex;
 }
 
+.hero-image {
+  min-width: 570px;
+}
+
 .hero-text {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-right: 140px;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-right: 120px;
 }
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 790;
+  font-weight: 400;
   line-height: 55px;
-  margin-bottom: 33px;
+  margin-bottom: 16px;
+  font-family: 'Museo Sans Bold';
 }
 
 .hero-text__subtitle {
   display: inline-block;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
+  padding-left: 2px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 65px;
+  font-family: 'Museo Sans Bold';
 }
 
 .hero-list {
@@ -156,7 +166,10 @@ img {
 }
 
 .hero-list__text {
-  max-width: 300px;
+  max-width: 250px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @media (max-width: 1200px) {
@@ -193,5 +206,21 @@ img {
   .hero-list__image {
     margin-right: 15px;
   }
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/museosanscyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/museosanscyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
