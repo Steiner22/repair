@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/museosanscyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/museosanscyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/museosanscyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light';
 }
@@ -15,7 +36,13 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 580px;
+    max-width: 600px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
     width: 90%;
   }
 }
@@ -27,8 +54,38 @@ body {
   padding: 18px 30px;
 }
 
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold';
+}
+
+.section-subtitle {
+  font-size: 16px;
+  display: block;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
 .navbar {
   padding: 8px 0;
+}
+
+.navbar img {
+  width: 100%;
 }
 
 .navbar-block {
@@ -78,7 +135,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 8px;
   font-family: 'Museo Sans Bold';
 }
 
@@ -95,41 +152,56 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .navbar {
+    padding: 15px 0;
+  }
+  .navbar__button {
+    font-size: 10px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
+
 .hero {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.hero-image {
-  min-width: 570px;
+.hero-image img {
+  width: 100%;
 }
 
 .hero-text {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  padding-right: 120px;
 }
 
 .hero-text__title {
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
-  margin-bottom: 16px;
+  margin-bottom: 38px;
   font-family: 'Museo Sans Bold';
 }
 
 .hero-text__subtitle {
   display: inline-block;
-  margin-bottom: 45px;
+  margin-bottom: 70px;
   padding-left: 2px;
   font-size: 20px;
   font-weight: 400;
-  line-height: 65px;
   font-family: 'Museo Sans Bold';
 }
 
@@ -146,6 +218,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -189,38 +265,165 @@ body {
 
 @media (max-width: 768px) {
   .hero-text__title {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.4;
     margin-bottom: 15px;
+    width: 80%;
   }
   .hero-text__subtitle {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 28px;
+    width: 50%;
   }
   .hero-list__item {
     margin-bottom: 20px;
   }
   .hero-list__text {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.2;
   }
   .hero-list__image {
     margin-right: 15px;
   }
+  .hero-image {
+    margin: 0;
+    height: 20%;
+  }
 }
 
-@font-face {
-  font-family: 'Museo Sans Light';
-  src: url("../fonts/museosanscyrl/MuseoSansCyrl-300.eot");
-  src: url("../fonts/museosanscyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/museosanscyrl/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@media (max-width: 320px) {
+  .hero {
+    padding: 25px 0;
+  }
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+    width: 100%;
+  }
 }
 
-@font-face {
-  font-family: 'Museo Sans Bold';
-  src: url("../fonts/museosanscyrl/MuseoSansCyrl-700.eot");
-  src: url("../fonts/museosanscyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/museosanscyrl/MuseoSansCyrl-700.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+.offer {
+  padding: 60px 0;
+  background: url("../img/offer-bg.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+}
+
+.offer-block {
+  padding-right: 90px;
+  width: 50%;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+.offer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 31px;
+}
+
+.offer-info__block {
+  max-width: 234px;
+}
+
+.offer-info__block:first-child {
+  margin-right: 60px;
+}
+
+.offer-text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer-phone {
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Museo Sans Bold";
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer {
+    padding: 40px 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 1.2;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
+  .offer__button {
+    font-size: 14px;
+    padding: 19px 62px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

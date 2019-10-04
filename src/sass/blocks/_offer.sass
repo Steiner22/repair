@@ -1,0 +1,80 @@
+.offer
+  padding: 60px 0
+  background: url('../img/offer-bg.png') no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &::before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color:#FFFFFF
+  &-block
+    padding-right: 90px
+    width: 50%
+    position: relative
+  &__title 
+    max-width: 360px
+    line-height: 35px
+  &__subtitle
+    max-width: 250px
+    margin-bottom: 30px
+  &__input
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    min-height: 70px
+  &-info
+    display: flex
+    margin-top: 31px
+    &__block
+      max-width: 234px
+      &:first-child
+        margin-right: 60px
+  &-text
+    font-size: 15px
+    line-height: 24px
+  &-phone
+    display: block
+    font-size: 15px
+    line-height: 24px
+    font-family: "Museo Sans Bold"
+    text-decoration: none
+    color: $text-color
+    
+
+    
+      
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 13px
+@media (max-width: 768px)
+  .offer
+    background: #ffffff
+    &-block
+      width: 100%
+      padding-right: 0
+@media (max-width: 320px)
+    .offer
+      padding: 40px 0
+      &__title
+        font-size: 18px
+        line-height: 1.2
+        width: 95%
+        margin-bottom: 20px
+      &__subtitle
+        font-size: 14px
+      &__button
+        font-size: 14px
+        padding: 19px 62px

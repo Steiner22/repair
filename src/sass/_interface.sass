@@ -1,3 +1,6 @@
+*
+  box-sizing: border-box
+
 body
   font-family: 'Museo Sans Light'
 
@@ -9,10 +12,32 @@ body
     width: 760px
 @media (max-width: 768px)
   .container
-    max-width: 580px
+    max-width: 600px
     width: 90%
+@media (max-width: 320px)
+  .container
+    width: 90%
+
 .button
   border-radius: 10px
   background-color: $main-color
   border: none
   padding: 18px 30px
+  &:hover
+    background-color: lighten($main-color , 10%)
+    cursor: pointer
+
+.section
+  padding: 90px 0
+  &-title
+    font-size: 24px
+    font-family: 'Museo Sans Bold'
+  &-subtitle
+    font-size: 16px
+    display: block
+
+.input
+  border: 1px solid $border-input    
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
