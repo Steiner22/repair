@@ -425,5 +425,16 @@ body {
     font-size: 14px;
     padding: 19px 62px;
   }
+  .offer-info {
+    display: block;
+  }
+  .text-primary {
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+  .text-secondary {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
