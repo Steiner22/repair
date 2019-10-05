@@ -524,22 +524,22 @@ body {
     font-size: 16px;
     line-height: 20px;
     font-family: 'Museo Sans Bold';
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .modal-dialog__subtitle {
     display: block;
     font-size: 12px;
     line-height: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .modal-dialog__input {
-    padding: 10px 50px 10px 10px;
+    padding: 10px 40px 10px 5px;
     margin-bottom: 10px;
   }
   .modal-dialog__button {
     padding: 10px 60px;
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 12px;
   }
@@ -552,7 +552,7 @@ body {
   }
   .modal-dialog__phone {
     font-size: 20px;
-    line-height: 10px;
+    line-height: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
