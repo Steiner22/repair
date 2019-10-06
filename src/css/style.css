@@ -487,13 +487,13 @@ body {
 
 .modal-dialog__input {
   width: 100%;
-  padding: 26px 190px 26px 26px;
+  padding: 25px;
   margin-bottom: 15px;
 }
 
 .modal-dialog__button {
   width: 100%;
-  padding: 25px 115px;
+  padding: 25px 70px;
   margin-top: 15px;
   margin-bottom: 25px;
   font-size: 16px;
@@ -533,15 +533,16 @@ body {
     margin-bottom: 15px;
   }
   .modal-dialog__input {
-    padding: 10px 40px 10px 5px;
+    padding: 15px;
     margin-bottom: 10px;
   }
   .modal-dialog__button {
-    padding: 10px 60px;
+    padding: 20px 40px;
     margin-top: 15px;
     margin-bottom: 20px;
     font-size: 12px;
     line-height: 12px;
+    text-align: center;
   }
   .modal-dialog__text {
     font-size: 12px;
