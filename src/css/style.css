@@ -272,12 +272,12 @@ body {
     font-size: 26px;
     line-height: 1.4;
     margin-bottom: 15px;
-    width: 100%;
+    max-width: 350px;
   }
   .hero-text__subtitle {
     font-size: 18px;
     margin-bottom: 28px;
-    width: 100%;
+    max-width: 220px;
   }
   .hero-list__item {
     margin-bottom: 20px;
