@@ -388,7 +388,6 @@
   <script>
     /* Иннициализация WOW.js */
     new WOW().init();
-
     $(document).ready(function() {
       /* Валидация формы brif */
       $('#brif-form').validate({
