@@ -83,6 +83,7 @@
             <input type="text" autocomplete="off" name="username" required class="input offer__input" placeholder="Ваше имя">
             <input type="tel" autocomplete="off" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+            <span id="offer-message"></span>
           </form>
           <div class="offer-info">
             <div class="offer-info__block">
@@ -385,115 +386,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
-  <script>
-    /* Иннициализация WOW.js */
-    new WOW().init();
-    $(document).ready(function() {
-      /* Валидация формы brif */
-      $('#brif-form').validate({
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          phone: {
-            required: true
-          }
-        },
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: jQuery.validator.format("Слишком короткое имя"),
-            maxlength: jQuery.validator.format("Слишком длинное имя")
-          },
-          email: {
-            required: "Заполните поле",
-            email: "Введите корректный email"
-          },
-          phone: {
-            required: "Заполните поле"
-          }
-        }
-      });
-      /* Валидация формы модального окна */
-    $('#modal-form').validate({
-      rules: {
-        username: {
-          required: true,
-          minlength: 2,
-          maxlength: 15
-        },
-        phone: {
-          required: true
-        }
-      },
-      messages: {
-        username: {
-          required: "Заполните поле",
-          minlength: jQuery.validator.format("Слишком короткое имя"),
-          maxlength: jQuery.validator.format("Слишком длинное имя")
-        },
-        phone: {
-          required: "Заполните поле"
-        }
-      }
-    });
-    /* Валидация формы offer */
-    $('#offer-form').validate({
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          },
-          phone: {
-            required: true
-          }
-        },
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: jQuery.validator.format("Слишком короткое имя"),
-            maxlength: jQuery.validator.format("Слишком длинное имя")
-          },
-          phone: {
-            required: "Заполните поле"
-          }
-        }
-      });
-     /* Маска для телефона */
-      $('.phone').mask('8 (999) 999-99-99');
-      /* Скрипт слайдера */
-      $('.slider').slick({
-        slidesToShow: 3,
-        slidslidesToScroll: 1,
-        prevArrow: $('.arrows__left'),
-        nextArrow: $('.arrows__right'),
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    });
-  </script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
