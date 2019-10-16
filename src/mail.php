@@ -32,7 +32,7 @@ try {
     <b>Телефон:</b> $phone";
 // Проверяем отравленность сообщения
 if ($mail->send()) {
-    header('location: thanks.php');
+    header('location: thanks.html');
 } else {
 echo "Сообщение не было отправлено. Неверно указаны настройки вашей почты";
 }
