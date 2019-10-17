@@ -190,23 +190,6 @@ body {
       flex-basis: 45%;
 }
 
-.hero-text__title {
-  font-family: 'Museo Sans Bold';
-  font-size: 41px;
-  font-weight: 400;
-  line-height: 55px;
-  margin-bottom: 38px;
-}
-
-.hero-text__subtitle {
-  display: inline-block;
-  margin-bottom: 70px;
-  padding-left: 2px;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: 'Museo Sans Bold';
-}
-
 .hero-list {
   margin: 0;
   padding: 0;
