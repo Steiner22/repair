@@ -83,7 +83,7 @@ body {
 }
 
 .navbar {
-  padding: 8px 0;
+  padding: 80px 0;
 }
 
 .navbar img {
@@ -134,7 +134,7 @@ body {
 .navbar__phone {
   display: inline-block;
   color: #333333;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   text-decoration: none;
   margin-top: 8px;
