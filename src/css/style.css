@@ -191,11 +191,11 @@ body {
 }
 
 .hero-text__title {
+  font-family: 'Museo Sans Bold';
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
   margin-bottom: 38px;
-  font-family: 'Museo Sans Bold';
 }
 
 .hero-text__subtitle {
